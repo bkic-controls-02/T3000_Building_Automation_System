@@ -198,7 +198,7 @@ BOOL CT3000App::InitInstance()
 {
 	 
 	GetModulePath();
-	CString strSource = g_strExePth + L"T3000Controls.dll";
+	CString strSource = g_strExePth + L"OptimaxControls.dll";
     //2018 04 23 修复bug 默写操作系统不是C盘的情况安装控件失败
     //解决办法  获取系统所在盘�? ，然后采取对应操�?.
     CString Local_System_Path;
@@ -219,7 +219,7 @@ BOOL CT3000App::InitInstance()
             CString temp_bacnetdll;
             CString temp_Regasm_path;
             temp_dotnet_path = Local_System_Path + _T("\\Microsoft.NET\\Framework\\v4.0.30319");
-            temp_t3000controlldll_path = temp_dotnet_path + _T("\\T3000Controls.dll");
+            temp_t3000controlldll_path = temp_dotnet_path + _T("\\OptimaxControls.dll");
             temp_bacnetdll = temp_dotnet_path + _T("\\TemcoStandardBacnetTool.dll");
             temp_Regasm_path = temp_dotnet_path + _T("\\RegAsm.exe");
 			CopyFile(strSource, temp_t3000controlldll_path, FALSE);
