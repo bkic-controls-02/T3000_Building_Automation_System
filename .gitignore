@@ -91,11 +91,11 @@ T3000 - VS2015 -  Platform Version - 10.0.10240.0.VC.db
 BacnetExplore/CodeExamples/AnotherStorageImplementation/DataPersistence/Newtonsoft.Json.dll
 BacnetExplore/CodeExamples/LibBacnet/bin/Release/LibBacnet.dll
 BacnetExplore/CodeExamples/Xamarin/YabeStack/bin/Release/YabeStack.dll
-/T3000Controls/bin/Release/T3000Controls.pdb
-/T3000Controls/bin/Release/T3000Controls.dll
-/T3000Controls/bin/Release/T3000Controls.dll
-/T3000Controls/bin/Release/T3000Controls.pdb
-/T3000Controls/obj/Release/T3000Controls.dll
+/T3000Controls/bin/Release/OptimaxControls.pdb
+/T3000Controls/bin/Release/OptimaxControls.dll
+/T3000Controls/bin/Release/OptimaxControls.dll
+/T3000Controls/bin/Release/OptimaxControls.pdb
+/T3000Controls/obj/Release/OptimaxControls.dll
 /T3000Controls/obj/Release/T3000Controls.csproj.FileListAbsolute.txt
 /.github/workflows/T3000Controls.yml
 /BacNetDllforVc/CMakeLists.txt
@@ -937,7 +937,7 @@ BacnetExplore/CodeExamples/Xamarin/YabeStack/bin/Release/YabeStack.dll
 /.vs/T3000 - VS2019/v16/*.opendb
 /enc_temp_folder
 /T3000ProgramMoudle/.vs/T3000ProgramMoudle/v16/*.db
-/T3000/T3000_config.ini
+/T3000/Optimax_config.ini
 /packages
 
 T3000Controls/obj/Release/*.resources

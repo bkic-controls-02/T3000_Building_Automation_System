@@ -71,7 +71,7 @@
 #define BACNET_VENDOR_ID 260
 #endif
 #if !defined(BACNET_VENDOR_NAME)
-#define BACNET_VENDOR_NAME "T3000 Building Automation System"
+#define BACNET_VENDOR_NAME "Optimax Building Automation System"
 #endif
 
 /* Max number of bytes in an APDU. */

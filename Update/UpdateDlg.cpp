@@ -552,7 +552,7 @@ DWORD WINAPI GetFtpFileThread(LPVOID lPvoid)
         }
         else
         {
-            CS_Info.Format(_T("Your T3000.exe is up-to-date"));
+            CS_Info.Format(_T("Your Optimax.exe is up-to-date"));
             Sleep(5000);
             m_static_step = UPDATE_STEP_READY_TO_CLOASE;
             getftpthread = NULL;
@@ -646,6 +646,7 @@ download_pass:
         GetPrivateProfileString(_T("SpecialFlag"), _T("Customer_SoftName"), _T("T3000.exe"), cs_new_name.GetBuffer(MAX_PATH), MAX_PATH, T3000_ini_file_path);
         cs_new_name.ReleaseBuffer();
         KillProcessFromName(cs_new_name);
+        KillProcessFromName(_T("OptiMax.exe"));
         KillProcessFromName(_T("ISP.exe"));
         Sleep(1000);
         m_static_step = UPDATE_STEP_UNCOMPRESS;

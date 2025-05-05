@@ -98,13 +98,13 @@ namespace Yabe
         {
             yabeFrm = this;            
             //StringBuilder AutoRunFlag = new StringBuilder();
-            //GetPrivateProfileString("Yabe", "Auto", "", AutoRunFlag, 255, "C:\\Work\\T3000_Building_Automation_System\\T3000 Output\\debug\\T3000_config.ini");
+            //GetPrivateProfileString("Yabe", "Auto", "", AutoRunFlag, 255, "C:\\Work\\T3000_Building_Automation_System\\T3000 Output\\debug\\Optimax_config.ini");
 
             //StringBuilder AutoObjectInstance = new StringBuilder();
-            //GetPrivateProfileString("Yabe", "ObjInstance", "", AutoObjectInstance, 255, "C:\\Work\\T3000_Building_Automation_System\\T3000 Output\\debug\\T3000_config.ini");
+            //GetPrivateProfileString("Yabe", "ObjInstance", "", AutoObjectInstance, 255, "C:\\Work\\T3000_Building_Automation_System\\T3000 Output\\debug\\Optimax_config.ini");
 
             //StringBuilder AutoLocalIP = new StringBuilder();
-            //GetPrivateProfileString("Yabe", "LocalPCIPaddress", "", AutoLocalIP, 255, "C:\\Work\\T3000_Building_Automation_System\\T3000 Output\\debug\\T3000_config.ini");
+            //GetPrivateProfileString("Yabe", "LocalPCIPaddress", "", AutoLocalIP, 255, "C:\\Work\\T3000_Building_Automation_System\\T3000 Output\\debug\\Optimax_config.ini");
 
 
             InitializeComponent();
