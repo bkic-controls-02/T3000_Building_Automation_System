@@ -47,14 +47,14 @@ CT3000App::CT3000App()
     CurrentT3000Version.ReleaseBuffer();
 
     //******************************************************
-    // Release 版本发布时屏蔽此段，此段 主要用于调试时 显示 具体是 几点钟的版本.
+    // Release 版本发布时屏蔽此段，此段 主要用于调试�? 显示 具体�? 几点钟的版本.
 //#ifdef _DEBUG
     char strTime[128] = { 0 }; // 取小时当 小版本号;
     CString Test_Version;  //   TIME 和DATE    
     memcpy(strTime, __TIME__, 2);
     MultiByteToWideChar(CP_ACP, 0, (char *)strTime, (int)strlen(strTime) + 1, Test_Version.GetBuffer(MAX_PATH), MAX_PATH);
     Test_Version.ReleaseBuffer();
-	CurrentT3000Version= CurrentT3000Version  + Test_Version; //杜帆 : Release 版发布的时候 这句屏蔽掉就好了 ，会自动获取编译的日期.
+	CurrentT3000Version= CurrentT3000Version  + Test_Version; //杜帆 : Release 版发布的时�? 这句屏蔽掉就好了 ，会自动获取编译的日�?.
 //#endif 
     //*******************************************************
     
@@ -200,7 +200,7 @@ BOOL CT3000App::InitInstance()
 	GetModulePath();
 	CString strSource = g_strExePth + L"T3000Controls.dll";
     //2018 04 23 修复bug 默写操作系统不是C盘的情况安装控件失败
-    //解决办法  获取系统所在盘符 ，然后采取对应操作.
+    //解决办法  获取系统所在盘�? ，然后采取对应操�?.
     CString Local_System_Path;
     TCHAR szPath[MAX_PATH];
     DWORD ret;
@@ -213,7 +213,7 @@ BOOL CT3000App::InitInstance()
 	{
 		//if (ReadDLLRegAsm()<1)
 		{
-#if 1 // 杜帆屏蔽  ， 许多杀毒软件 检测到  RegAsm.exe 的访问不合法， 报病毒;
+#if 1 // 杜帆屏蔽  �? 许多杀毒软�? 检测到  RegAsm.exe 的访问不合法�? 报病�?;
             CString temp_dotnet_path;
             CString temp_t3000controlldll_path;
             CString temp_bacnetdll;
@@ -324,7 +324,7 @@ BOOL CT3000App::InitInstance()
 
 			//这一段是方便 installshield 制作安装文件的时候第一次运行将安装文件的zip文件解压到ResourceFile下面的www文件夹下
 			www_zip_file = g_strExePth + _T("ResourceFile\\webview.zip");
-			//判断www_zip_file文件是否存在，存在就解压到webview_www_folder下
+			//判断www_zip_file文件是否存在，存在就解压到webview_www_folder�?
 			CFileFind temp_findzip;
 			BOOL	nret = temp_findzip.FindFile(www_zip_file);
 			if (nret)
@@ -468,7 +468,7 @@ BOOL CT3000App::InitInstance()
 			if (hFind==INVALID_HANDLE_VALUE)//说明当前目录下无t3000.mdb
 			{
 				
-				//没有找到就创建一个默认的数据库
+				//没有找到就创建一个默认的数据�?
 				FilePath=g_strExePth+_T("Database\\T3000.db");
 				HRSRC hrSrc = FindResource(AfxGetResourceHandle(), MAKEINTRESOURCE(IDR_T3000DB1), _T("T3000DB"));   
 				HGLOBAL hGlobal = LoadResource(AfxGetResourceHandle(), hrSrc);   
@@ -495,7 +495,7 @@ BOOL CT3000App::InitInstance()
 			hFind_Monitor = FindFirstFile(g_achive_monitor_datatbase_path, &wfd_monitor);//
 			if (hFind_Monitor==INVALID_HANDLE_VALUE)//说明当前目录下无MonitorData.db
 			{
-				//没有找到就创建一个默认的数据库
+				//没有找到就创建一个默认的数据�?
 				FilePath_Monitor= g_achive_monitor_datatbase_path;
 				HRSRC hrSrc = FindResource(AfxGetResourceHandle(), MAKEINTRESOURCE(IDR_MONITOR_DB2), _T("MONITOR_DB"));   
 				HGLOBAL hGlobal = LoadResource(AfxGetResourceHandle(), hrSrc);   
@@ -662,7 +662,7 @@ BOOL CT3000App::InitInstance()
 	   ((CMainFrame*)m_pMainWnd)->SwitchToPruductType(DLG_DIALOG_DEFAULT_BUILDING); 
 
        m_szAppPath  = g_strExePth;
-       if(m_special_customer == 1) //如果是第一个客户 就定义为CPR-1000-Help.chm
+       if(m_special_customer == 1) //如果是第一个客�? 就定义为CPR-1000-Help.chm
            m_szHelpFile = theApp.m_szAppPath + L"CPR-1000-Help.chm";
        else
             m_szHelpFile = theApp.m_szAppPath + L"T3000_Help.chm";
